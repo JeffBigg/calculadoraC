@@ -47,7 +47,7 @@
             btnDivision = new Button();
             btnResta = new Button();
             btnSuma = new Button();
-            btnIgual = new Button();
+            btnResultado = new Button();
             btnPunto = new Button();
             btnCero = new Button();
             btnSigno = new Button();
@@ -268,15 +268,16 @@
             btnSuma.UseVisualStyleBackColor = true;
             btnSuma.Click += clickOperador;
             // 
-            // btnIgual
+            // btnResultado
             // 
-            btnIgual.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnIgual.Location = new Point(228, 233);
-            btnIgual.Name = "btnIgual";
-            btnIgual.Size = new Size(110, 45);
-            btnIgual.TabIndex = 19;
-            btnIgual.Text = "=";
-            btnIgual.UseVisualStyleBackColor = true;
+            btnResultado.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnResultado.Location = new Point(228, 233);
+            btnResultado.Name = "btnResultado";
+            btnResultado.Size = new Size(110, 45);
+            btnResultado.TabIndex = 19;
+            btnResultado.Text = "=";
+            btnResultado.UseVisualStyleBackColor = true;
+            btnResultado.Click += btnResultado_Click;
             // 
             // btnPunto
             // 
@@ -317,7 +318,7 @@
             Controls.Add(btnPunto);
             Controls.Add(btnCero);
             Controls.Add(btnSigno);
-            Controls.Add(btnIgual);
+            Controls.Add(btnResultado);
             Controls.Add(btnResta);
             Controls.Add(btnSuma);
             Controls.Add(btnMultiplicacion);
@@ -365,7 +366,7 @@
         private Button btnDivision;
         private Button btnResta;
         private Button btnSuma;
-        private Button btnIgual;
+        private Button btnResultado;
         private Button btnPunto;
         private Button btnCero;
         private Button btnSigno;

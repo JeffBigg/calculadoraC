@@ -37,5 +37,38 @@ namespace calculadora
 
             txtResultado.Text = "0";
         }
+
+        private void btnResultado_Click(object sender, EventArgs e)
+        {
+            Numero2 = Convert.ToDouble(txtResultado.Text);
+
+            if (Operador == '+')
+            {
+                txtResultado.Text = (Numero1 + Numero2).ToString();
+                Numero1 = Convert.ToDouble(txtResultado.Text);
+            }
+            else if (Operador == '-')
+            {
+                txtResultado.Text = (Numero1 - Numero2).ToString();
+                Numero1 = Convert.ToDouble(txtResultado.Text);
+            }
+            else if (Operador == 'x')
+            {
+                txtResultado.Text = (Numero1 * Numero2).ToString();
+                Numero1 = Convert.ToDouble(txtResultado.Text);
+            }
+            else if (Operador == '/')
+            {
+                if (txtResultado.Text != "0")
+                {
+                    txtResultado.Text = (Numero1 / Numero2).ToString();
+                    Numero1 = Convert.ToDouble(txtResultado.Text);
+                }
+                else
+                {
+                    MessageBox.Show("No se puede dividir por cero!!");
+                }
+            }
+        }
     }
 }
