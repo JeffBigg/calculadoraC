@@ -60,6 +60,11 @@ namespace calculadora
                 txtResultado.Text = (Numero1 + Numero2).ToString();
                 Numero1 = Convert.ToDouble(txtResultado.Text);
             }
+            else if (Operador == '%')
+            {
+                txtResultado.Text = ((Numero1 * Numero2) / 100).ToString();
+                Numero1 = Convert.ToDouble(txtResultado.Text);
+            }
             else if (Operador == '-')
             {
                 txtResultado.Text = (Numero1 - Numero2).ToString();

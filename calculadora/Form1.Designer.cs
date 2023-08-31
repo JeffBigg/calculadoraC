@@ -51,6 +51,7 @@
             btnPunto = new Button();
             btnCero = new Button();
             btnSigno = new Button();
+            btnPorcentaje = new Button();
             SuspendLayout();
             // 
             // txtResultado
@@ -274,7 +275,7 @@
             // btnResultado
             // 
             btnResultado.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnResultado.Location = new Point(228, 233);
+            btnResultado.Location = new Point(228, 284);
             btnResultado.Name = "btnResultado";
             btnResultado.Size = new Size(110, 45);
             btnResultado.TabIndex = 19;
@@ -315,11 +316,24 @@
             btnSigno.UseVisualStyleBackColor = true;
             btnSigno.Click += btnSigno_Click;
             // 
+            // btnPorcentaje
+            // 
+            btnPorcentaje.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            btnPorcentaje.Location = new Point(228, 233);
+            btnPorcentaje.Name = "btnPorcentaje";
+            btnPorcentaje.Size = new Size(45, 45);
+            btnPorcentaje.TabIndex = 23;
+            btnPorcentaje.Tag = "%";
+            btnPorcentaje.Text = "%";
+            btnPorcentaje.UseVisualStyleBackColor = true;
+            btnPorcentaje.Click += clickOperador;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(391, 379);
+            Controls.Add(btnPorcentaje);
             Controls.Add(btnPunto);
             Controls.Add(btnCero);
             Controls.Add(btnSigno);
@@ -375,5 +389,6 @@
         private Button btnPunto;
         private Button btnCero;
         private Button btnSigno;
+        private Button btnPorcentaje;
     }
 }
