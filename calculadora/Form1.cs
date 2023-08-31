@@ -128,5 +128,6 @@ namespace calculadora
             Numero1 *= -1;
             txtResultado.Text = Numero1.ToString();
         }
+
     }
 }
