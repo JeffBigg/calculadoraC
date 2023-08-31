@@ -203,8 +203,10 @@
             btnCuadrado.Name = "btnCuadrado";
             btnCuadrado.Size = new Size(45, 45);
             btnCuadrado.TabIndex = 14;
+            btnCuadrado.Tag = "²";
             btnCuadrado.Text = "x²";
             btnCuadrado.UseVisualStyleBackColor = true;
+            btnCuadrado.Click += clickOperador;
             // 
             // btnRaiz
             // 
@@ -213,8 +215,10 @@
             btnRaiz.Name = "btnRaiz";
             btnRaiz.Size = new Size(45, 45);
             btnRaiz.TabIndex = 13;
+            btnRaiz.Tag = "√";
             btnRaiz.Text = "√";
             btnRaiz.UseVisualStyleBackColor = true;
+            btnRaiz.Click += clickOperador;
             // 
             // btnMultiplicacion
             // 
@@ -223,8 +227,10 @@
             btnMultiplicacion.Name = "btnMultiplicacion";
             btnMultiplicacion.Size = new Size(45, 45);
             btnMultiplicacion.TabIndex = 16;
+            btnMultiplicacion.Tag = "x";
             btnMultiplicacion.Text = "x";
             btnMultiplicacion.UseVisualStyleBackColor = true;
+            btnMultiplicacion.Click += clickOperador;
             // 
             // btnDivision
             // 
@@ -233,8 +239,10 @@
             btnDivision.Name = "btnDivision";
             btnDivision.Size = new Size(45, 45);
             btnDivision.TabIndex = 15;
+            btnDivision.Tag = "/";
             btnDivision.Text = "/";
             btnDivision.UseVisualStyleBackColor = true;
+            btnDivision.Click += clickOperador;
             // 
             // btnResta
             // 
@@ -243,8 +251,10 @@
             btnResta.Name = "btnResta";
             btnResta.Size = new Size(45, 45);
             btnResta.TabIndex = 18;
+            btnResta.Tag = "-";
             btnResta.Text = "-";
             btnResta.UseVisualStyleBackColor = true;
+            btnResta.Click += clickOperador;
             // 
             // btnSuma
             // 
@@ -253,9 +263,10 @@
             btnSuma.Name = "btnSuma";
             btnSuma.Size = new Size(45, 45);
             btnSuma.TabIndex = 17;
+            btnSuma.Tag = "+";
             btnSuma.Text = "+";
             btnSuma.UseVisualStyleBackColor = true;
-            btnSuma.Click += btnSuma_Click;
+            btnSuma.Click += clickOperador;
             // 
             // btnIgual
             // 

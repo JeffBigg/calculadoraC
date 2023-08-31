@@ -2,9 +2,9 @@ namespace calculadora
 {
     public partial class Form1 : Form
     {
-        double Numero1 = 0; 
+        double Numero1 = 0;
         double Numero2 = 0;
-        char operador;
+        char Operador;
 
         public Form1()
         {
@@ -29,9 +29,13 @@ namespace calculadora
             txtResultado.Text += boton.Text;
         }
 
-        private void btnSuma_Click(object sender, EventArgs e)
+        private void clickOperador(object sender, EventArgs e)
         {
+            var boton = ((Button)sender);
+            Numero1 = Convert.ToDouble(txtResultado.Text);
+            Operador = Convert.ToChar(boton.Tag);
 
+            txtResultado.Text = "0";
         }
     }
 }
