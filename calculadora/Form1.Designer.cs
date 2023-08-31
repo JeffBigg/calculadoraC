@@ -175,6 +175,7 @@
             btnQuitar.TabIndex = 12;
             btnQuitar.Text = "<-";
             btnQuitar.UseVisualStyleBackColor = true;
+            btnQuitar.Click += btnQuitar_Click;
             // 
             // btnBorrartodo
             // 
@@ -185,6 +186,7 @@
             btnBorrartodo.TabIndex = 11;
             btnBorrartodo.Text = "C";
             btnBorrartodo.UseVisualStyleBackColor = true;
+            btnBorrartodo.Click += btnBorrartodo_Click;
             // 
             // btnBorrar
             // 
@@ -195,6 +197,7 @@
             btnBorrar.TabIndex = 10;
             btnBorrar.Text = "CE";
             btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
             // 
             // btnCuadrado
             // 
