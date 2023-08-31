@@ -108,5 +108,20 @@ namespace calculadora
         {
             txtResultado.Text = "0";
         }
+
+        private void btnPunto_Click(object sender, EventArgs e)
+        {
+            if (!txtResultado.Text.Contains("."))
+            {
+                txtResultado.Text += ".";
+            }
+        }
+
+        private void btnSigno_Click(object sender, EventArgs e)
+        {
+            Numero1 = Convert.ToDouble(txtResultado.Text);
+            Numero1 *= -1;
+            txtResultado.Text = Numero1.ToString();
+        }
     }
 }

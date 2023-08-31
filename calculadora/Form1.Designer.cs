@@ -291,6 +291,7 @@
             btnPunto.TabIndex = 22;
             btnPunto.Text = ".";
             btnPunto.UseVisualStyleBackColor = true;
+            btnPunto.Click += btnPunto_Click;
             // 
             // btnCero
             // 
@@ -312,6 +313,7 @@
             btnSigno.TabIndex = 20;
             btnSigno.Text = "+/-";
             btnSigno.UseVisualStyleBackColor = true;
+            btnSigno.Click += btnSigno_Click;
             // 
             // Form1
             // 
