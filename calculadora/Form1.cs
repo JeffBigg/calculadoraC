@@ -2,6 +2,10 @@ namespace calculadora
 {
     public partial class Form1 : Form
     {
+        double Numero1 = 0; 
+        double Numero2 = 0;
+        char operador;
+
         public Form1()
         {
             InitializeComponent();
@@ -25,5 +29,9 @@ namespace calculadora
             txtResultado.Text += boton.Text;
         }
 
+        private void btnSuma_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

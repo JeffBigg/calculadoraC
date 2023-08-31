@@ -57,6 +57,7 @@
             // 
             txtResultado.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             txtResultado.Location = new Point(31, 12);
+            txtResultado.MaxLength = 21;
             txtResultado.Multiline = true;
             txtResultado.Name = "txtResultado";
             txtResultado.ReadOnly = true;
@@ -254,6 +255,7 @@
             btnSuma.TabIndex = 17;
             btnSuma.Text = "+";
             btnSuma.UseVisualStyleBackColor = true;
+            btnSuma.Click += btnSuma_Click;
             // 
             // btnIgual
             // 
